@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bushra Akter Mimno — Web Developer Portfolio</title>
+  <meta name="description" content="Web Developer (PSD/Figma to HTML). Responsive, accessible, high‑performance websites and landing pages." />
+  <meta name="theme-color" content="#0f172a">
+  <!-- Open Graph / SEO -->
+  <meta property="og:title" content="Web Developer Portfolio" />
+  <meta property="og:description" content="PSD/Figma to HTML • CMS Expertise • Responsive UI" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/preview.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-feature-settings: 'ss01' on, 'liga' on; }
+    /* simple fade-up */
+    .reveal { opacity: 0; transform: translateY(12px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.show { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 selection:bg-indigo-500/30 selection:text-white" x-data>
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b border-slate-800/60 bg-slate-950/70 backdrop-blur">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="flex h-16 items-center justify-between">
+        <a href="#home" class="group inline-flex items-center gap-2 font-extrabold tracking-tight">
+          <span class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-indigo-500/20 ring-1 ring-inset ring-indigo-400/30">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M5 9l7-6 7 6"/></svg>
+          </span>
+          <span class="text-lg">Bushra.dev</span>
+        </a>
+        <button id="navToggle" class="md:hidden rounded-xl border border-slate-700 px-3 py-2 text-sm" aria-expanded="false" aria-controls="primaryNav">Menu</button>
+        <nav id="primaryNav" class="hidden md:block" aria-label="Primary">
+          <ul class="flex items-center gap-6 text-sm">
+            <li><a class="hover:text-white/90 text-slate-300" href="#about">About</a></li>
+            <li><a class="hover:text-white/90 text-slate-300" href="#skills">Skills</a></li>
+            <li><a class="hover:text-white/90 text-slate-300" href="#services">Services</a></li>
+            <li><a class="hover:text-white/90 text-slate-300" href="#projects">Projects</a></li>
+            <li><a class="hover:text-white/90 text-slate-300" href="#contact">Contact</a></li>
+            <li><a class="rounded-xl bg-indigo-500 px-4 py-2 font-semibold text-slate-950 shadow-sm shadow-indigo-500/20 hover:bg-indigo-400" href="#contact">Hire me</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="mobileNav" class="md:hidden hidden pb-4" role="region" aria-labelledby="navToggle">
+        <ul class="grid gap-2">
+          <li><a class="block rounded-lg px-3 py-2 text-slate-300 hover:bg-slate-900/60" href="#about">About</a></li>
+          <li><a class="block rounded-lg px-3 py-2 text-slate-300 hover:bg-slate-900/60" href="#skills">Skills</a></li>
+          <li><a class="block rounded-lg px-3 py-2 text-slate-300 hover:bg-slate-900/60" href="#services">Services</a></li>
+          <li><a class="block rounded-lg px-3 py-2 text-slate-300 hover:bg-slate-900/60" href="#projects">Projects</a></li>
+          <li><a class="block rounded-lg px-3 py-2 text-slate-300 hover:bg-slate-900/60" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(80rem_40rem_at_50%_-20rem,rgba(99,102,241,0.15),transparent)]"></div>
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="grid items-center gap-10 py-20 md:grid-cols-2 md:py-28">
+        <div class="reveal">
+          <p class="mb-2 text-sm font-medium tracking-wide text-indigo-400">Web Developer • Bangladesh</p>
+          <h1 class="text-3xl font-extrabold leading-tight md:text-5xl">Bushra Akter Mimno</h1>
+          <p class="mt-4 max-w-prose text-slate-300">I create responsive, accessible, and fast websites by converting PSD/Figma designs to HTML using Tailwind CSS and JavaScript.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#projects" class="rounded-xl bg-indigo-500 px-4 py-2 font-semibold text-slate-950 shadow-sm shadow-indigo-500/20 hover:bg-indigo-400">View Projects</a>
+            <a href="mailto:bushraaktermimno@gmail.com" class="rounded-xl border border-slate-700 px-4 py-2 font-semibold text-slate-200 hover:bg-slate-900/60">Contact</a>
+            <a href="Bushra.pdf" class="rounded-xl border border-indigo-500/40 px-4 py-2 font-semibold text-indigo-300 hover:bg-indigo-500/10" download>Download CV</a>
+          </div>
+        </div>
+        <div class="reveal md:justify-self-end">
+          <div class="relative">
+            <div class="absolute inset-0 rounded-3xl bg-indigo-500/10 blur-2xl"></div>
+            <img src="assets/received_1317489988961186.jpeg" alt="Developer at work" class="relative z-10 h-64 w-64 rounded-3xl object-cover ring-1 ring-inset ring-white/10 md:h-80 md:w-80"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="border-t border-slate-800/60 py-20">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="grid gap-10 md:grid-cols-3">
+        <div class="reveal md:col-span-1">
+          <h2 class="text-2xl font-bold">About Me</h2>
+        </div>
+        <div class="reveal md:col-span-2 text-slate-300">
+          <p>I am a frontend-focused web developer. Pixel‑aligned design, clean code, and performance-driven delivery are my top priorities.</p>
+          <ul class="mt-4 grid gap-2 text-sm text-slate-400">
+            <li>• PSD/Figma → Responsive HTML (Tailwind/Bootstrap)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-20">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="reveal text-2xl font-bold">Skills</h2>
+      <div class="reveal mt-6 grid gap-4 sm:grid-cols-2 md:grid-cols-2">
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5">
+          <h3 class="font-semibold">Frontend</h3>
+          <p class="mt-2 text-sm text-slate-400">HTML5, CSS3, Tailwind, Bootstrap, JS (ES6+)</p>
+        </div>
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5">
+          <h3 class="font-semibold">Design → Code</h3>
+          <p class="mt-2 text-sm text-slate-400">Figma, PSD → Responsive, pixel‑aware</p>
+        </div>
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5">
+          <h3 class="font-semibold">Optimization</h3>
+          <p class="mt-2 text-sm text-slate-400">Lighthouse, WebP/AVIF, lazy‑load, minify</p>
+        </div>
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5">
+          <h3 class="font-semibold">Collab</h3>
+          <p class="mt-2 text-sm text-slate-400">Git/GitHub, Trello, Notion, Client Handoff</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="border-y border-slate-800/60 py-20">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="reveal text-2xl font-bold">Services</h2>
+      <div class="reveal mt-6 grid gap-4 md:grid-cols-2">
+        <article class="rounded-2xl border border-slate-800 bg-slate-900/40 p-6">
+          <h3 class="font-semibold">PSD to HTML</h3>
+          <p class="mt-2 text-sm text-slate-400">Pixel‑perfect, responsive code with optimized images.</p>
+        </article>
+        <article class="rounded-2xl border border-slate-800 bg-slate-900/40 p-6">
+          <h3 class="font-semibold">Figma to HTML</h3>
+          <p class="mt-2 text-sm text-slate-400">Follows auto-layout, grid, and design tokens to deliver exact output</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="flex items-end justify-between gap-6">
+        <h2 class="reveal text-2xl font-bold">Projects</h2>
+        <a href="https://github.com/BushraAkterMimno" class="reveal text-sm text-indigo-300 hover:underline" target="_blank" rel="noreferrer">View GitHub →</a>
+      </div>
+      <div class="reveal mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Project Card 1 -->
+        <article class="group overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/40">
+          <a href="https://your-live-link.com" target="_blank" rel="noreferrer" class="block">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="Landing page preview" class="h-44 w-full object-cover transition duration-300 group-hover:scale-105" />
+          </a>
+          <div class="p-5">
+            <h3 class="font-semibold">SaaS Landing Page</h3>
+            <p class="mt-1 text-sm text-slate-400">Figma → Tailwind</p>
+            <div class="mt-3 flex flex-wrap gap-2 text-xs text-slate-300">
+              <span class="rounded-full border border-slate-700 px-2 py-1">HTML</span>
+              <span class="rounded-full border border-slate-700 px-2 py-1">Tailwind</span>
+              <span class="rounded-full border border-slate-700 px-2 py-1">JS</span>
+            </div>
+          </div>
+        </article>
+        <!-- Project Card 2 -->
+        <article class="group overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/40">
+          <a href="#" class="block" target="_blank" rel="noreferrer">
+            <img src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?q=80&w=1200&auto=format&fit=crop" alt="Ecommerce preview" class="h-44 w-full object-cover transition duration-300 group-hover:scale-105" />
+          </a>
+          <div class="p-5">
+            <h3 class="font-semibold">Shop Homepage</h3>
+            <p class="mt-1 text-sm text-slate-400">PSD → HTML/Bootstrap, responsive grid & filters</p>
+            <div class="mt-3 flex flex-wrap gap-2 text-xs text-slate-300">
+              <span class="rounded-full border border-slate-700 px-2 py-1">HTML</span>
+              <span class="rounded-full border border-slate-700 px-2 py-1">Bootstrap</span>
+              <span class="rounded-full border border-slate-700 px-2 py-1">jQuery</span>
+            </div>
+          </div>
+        </article>
+        <!-- Project Card 3 -->
+        <article class="group overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/40">
+          <a href="#" class="block" target="_blank" rel="noreferrer">
+            <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1200&auto=format&fit=crop" alt="WordPress theme preview" class="h-44 w-full object-cover transition duration-300 group-hover:scale-105" />
+          </a>
+          <div class="p-5">
+            <h3 class="font-semibold">WordPress Theme</h3>
+            <p class="mt-1 text-sm text-slate-400">Custom theme, Elementor widgets, Woo integration</p>
+            <div class="mt-3 flex flex-wrap gap-2 text-xs text-slate-300">
+              <span class="rounded-full border border-slate-700 px-2 py-1">PHP</span>
+              <span class="rounded-full border border-slate-700 px-2 py-1">WordPress</span>
+              <span class="rounded-full border border-slate-700 px-2 py-1">Woo</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="border-t border-slate-800/60 py-20">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="grid gap-10 md:grid-cols-2">
+        <div class="reveal">
+          <h2 class="text-2xl font-bold">Let’s work together</h2>
+          <p class="mt-2 max-w-prose text-slate-300">Contact me if you want your design converted into a pixel-perfect and fast-loading website.</p>
+          <ul class="mt-4 space-y-2 text-slate-300">
+            <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m8 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg><span>Available for freelance</span></li>
+            <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m8 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg><span>Dhaka, Bangladesh (GMT+6)</span></li>
+          </ul>
+        </div>
+        <form class="reveal grid gap-4" action="mailto:hello@example.com" method="post" enctype="text/plain">
+          <label class="grid gap-1">
+            <span class="text-sm">Your Name</span>
+            <input class="rounded-xl border border-slate-800 bg-slate-900/60 px-3 py-2 outline-none focus:border-indigo-500" type="text" name="name" required />
+          </label>
+          <label class="grid gap-1">
+            <span class="text-sm">Email</span>
+            <input class="rounded-xl border border-slate-800 bg-slate-900/60 px-3 py-2 outline-none focus:border-indigo-500" type="email" name="email" required />
+          </label>
+          <label class="grid gap-1">
+            <span class="text-sm">Message</span>
+            <textarea class="min-h-[120px] rounded-xl border border-slate-800 bg-slate-900/60 px-3 py-2 outline-none focus:border-indigo-500" name="message" required></textarea>
+          </label>
+          <button class="justify-self-start rounded-xl bg-indigo-500 px-4 py-2 font-semibold text-slate-950 shadow-sm shadow-indigo-500/20 hover:bg-indigo-400" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800/60 py-6">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 text-slate-400">
+      <p>© <span id="year"></span> Bushra Akter Mimno</p>
+      <div class="flex items-center gap-3">
+        <a href="https://github.com/BushraAkterMimno" target="_blank" rel="noreferrer" class="rounded-lg border border-slate-800 px-2 py-1 hover:bg-slate-900/60">GitHub</a>
+        <a href="https://linkedin.com/in/bushraaktermimno" target="_blank" rel="noreferrer" class="rounded-lg border border-slate-800 px-2 py-1 hover:bg-slate-900/60">LinkedIn</a>
+        <a href="mailto:bushraaktermimno@gmail.com" class="rounded-lg border border-slate-800 px-2 py-1 hover:bg-slate-900/60">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Mobile nav toggle
+    const toggle = document.getElementById('navToggle');
+    const mobile = document.getElementById('mobileNav');
+    toggle?.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      mobile.classList.toggle('hidden');
+    });
+    // Reveal on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('show'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
