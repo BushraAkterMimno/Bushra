@@ -1,0 +1,18 @@
+html { 
+    scroll-behavior: smooth; 
+}
+
+body { 
+    font-feature-settings: 'ss01' on, 'liga' on; 
+}
+
+
+/* simple fade-up */
+
+.reveal { 
+    opacity: 0; transform: translateY(12px); transition: opacity .6s ease, transform .6s ease; 
+}
+
+.reveal.show { 
+    opacity: 1; transform: translateY(0); 
+}
